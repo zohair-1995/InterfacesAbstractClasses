@@ -1,4 +1,5 @@
 public class Sky extends Environment<Flyable>{
+    int maxSpeed = 2000;
     @Override
     public void checkTraffic() {
 

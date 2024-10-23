@@ -1,7 +1,5 @@
 public class Road extends Environment<Carable> {
-
-
-
+    int maxSpeed = 70;
     @Override
     public void checkTraffic() {
 

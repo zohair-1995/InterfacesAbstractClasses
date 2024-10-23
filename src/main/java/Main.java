@@ -35,6 +35,11 @@ public class Main {
         sky.addTraffic(new Pigeon());
         sky.addTraffic(new Aeroplane());
 
+        //intialise space environment:
+        Space space = new Space(); // create a space
+        space.addTraffic(new Rocket());
+        Rocket infinity = new Rocket();// created the infinity rocket
+        infinity.s
         //sky.checkTraffic();
 
         Water water = new Water(); //created a water
@@ -51,12 +56,14 @@ public class Main {
 
         //road.checkTraffic(); //print 'car is moving on the road!!' 'aeroplane is moving... etc.'
 
-        List<Environment<?>> environments = List.of(sky, water, road);
+        /*List<Environment<?>> environments = List.of(sky, water, road, space);
 
         for (Environment<?> environment: environments) {
             //environment.checkTraffic();
             environment.checkVehicles();
-        }
+        }*/
+
+        space.checkTraffic();// print Rocket reached orbital altitude!
 
 
 
